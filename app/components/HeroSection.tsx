@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <div className="max-w-[1600px] flex flex-col-reverse  md:flex-row  bg-primaryColor mt-10  m-auto">
       <div className="flex flex-1  flex-col justify-center   p-4  ">
-        <h1 className=" font-bold w-[500px] text-left text-4xl">
+        <h1 className=" font-bold w-[500px] text-left text-6xl">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </h1>
         <p className=" text-left text-xs mt-4 md:w-[400px]">

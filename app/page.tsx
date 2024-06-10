@@ -8,18 +8,20 @@ import Products from "./components/Products";
 import TopSeller from "./components/TopSeller";
 import Cards from "./components/Card";
 import Footer from "./components/Footer";
+import Footer1 from "./components/Footer1";
 export default function Home() {
   return (
     <div>
-      <TopNav />
+       <TopNav />
       <Navbar1/>
       <HeroSection/>
       <Logos/>
       <Text/>
       <Products/>
       <TopSeller/>
-      <Cards/>
+      <Cards/> 
       <Footer/>
+       <Footer1/> 
     </div>
   );
 }
