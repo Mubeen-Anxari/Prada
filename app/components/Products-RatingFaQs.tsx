@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ProductsRatingFaQs() {
   return (
-       <div className='  max-w-[1300px] m-auto   '>
+       <div className='  max-w-[1200px] m-auto mx-5 mt-4   '>
        <div className=' flex md:w-full justify-between'>
        <h1 >Product Details</h1>
         <h1  className='font-bold'>Rating & Reviews</h1>

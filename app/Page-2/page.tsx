@@ -13,20 +13,20 @@ export default function Page() {
     <div>
       <div className=" max-w-[1300px]  m-auto lg:flex  md:w-full   mt-10  gap-4     ">
         <div className=" lg:flex gap-2">
-          <div className=" w-[517px] md:w-full ml-1  ">
+          <div className="  mt-2  w-[522px] ml-1  ">
         <Link  href="/Blog/1">
                 <Image
                 className=" bg-primaryColor  p-10 rounded-xl"
                   src="/T-shirt.png"
-                  width={517}
-                  height={517}
+                  width={600}
+                  height={600}
                   alt="pic"
                 ></Image>
           </Link>
       </div>
           <Blog  />
         </div>
-        <div className=" mt-4">
+        <div className=" mt-4 mx-4">
           <h1 className=" text-5xl font-bold  "> One Life Graphic T-shirt</h1>
           <div className=" flex gap-2 mt-2    ">
             <Image
@@ -63,7 +63,7 @@ export default function Page() {
           </div>
           <hr className="text-[#F0F0F0] mt-4" />
           <h1 className="text-textColor text-normal mt-4">Choose Size</h1>
-          <div className=" flex sm:flex-row gap-2 sm:w-full mt-2">
+          <div className=" flex justify-between sm:flex-row  mx-5 sm:w-full mt-2">
             <button className="bg-[#F0F0F0] text-textColor w-20 p-1 rounded-full">
               Small{" "}
             </button>
@@ -79,7 +79,7 @@ export default function Page() {
           </div>
           <hr className="text-[#F0F0F0] mt-4" />
           <div className=" flex gap-4 sm:flex-row ">
-            <div className=" flex justify-between mt-2 bg-[#F0F0F0]  w-36 rounded-full p-2 ">
+            <div className=" flex mx-5 justify-between mt-2 bg-[#F0F0F0]  w-36 rounded-full p-2 ">
               <h1>-</h1>
               <h1>1</h1>
               <h1>+</h1>

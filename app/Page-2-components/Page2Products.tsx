@@ -24,10 +24,10 @@ export default function Page2Products() {
      <div className=" grid mx-20  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] gap-4">
       {images?.map((item) => {
         return (
-          <Card radius="lg" className="border-none  w-[295px]  md:w-full flex text-center">
-            <div className="flex flex-col bg-primaryColor rounded-md ">
+          <Card radius="lg" className="border-none  w-full  md:[295px] flex text-center">
+            <div className=" text-center bg-primaryColor rounded-md ">
               <Image
-                className=" ml-10 "
+                className="  "
                 src={item?.image}
                 width={200}
                 height={200}
