@@ -95,21 +95,21 @@ export default function Footer1() {
   ]
   return (
     <div className=" bg-primaryColor ">
-      <div className=" max-w-[1200px] m-auto  flex lg:flex-row md:flex-col sm:flex-col      ">
-        <div className=" flex flex-row md:flex-col sm:flex-col gap-4">
+      <div className=" max-w-[1200px] m-auto p-4 mt-10 lg:flex    ">
+        <div className="">
           <h1 className="font-bold text-2xl mt-2 ">SHOP.CO</h1>
           <p className=" text-sm font-normal text-textColor w-[248px] h-[66px]">
             We have clothes that suits your style and which you're proud to
             wear. From women to men.
           </p>
-          <div className=" flex gap-2 md:flex-row">
+          <div className=" flex gap-2">
             <Image src="/logos/1.png" width={28} height={28} alt="pic"></Image>
             <Image src="/logos/2.png" width={28} height={28} alt="pic"></Image>
             <Image src="/logos/3.png" width={28} height={28} alt="pic"></Image>
             <Image src="/logos/4.png" width={28} height={28} alt="pic"></Image>
           </div>
         </div>
-        <div className="flex-1 mt-2 ml-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="flex-1 mt-2  grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {titles?.map((item, index) => {
             return (
               <div key={index}>

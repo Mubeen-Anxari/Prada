@@ -37,7 +37,7 @@ export default function App() {
   ];
   return (
     <Navbar maxWidth="full" isBordered>
-      <NavbarContent className="sm:hidden">
+      <NavbarContent className="md:hidden">
         <NavbarMenuToggle icon={<RxHamburgerMenu color="black" size={25} />} />
       </NavbarContent>
       <NavbarContent className="sm:hidden" justify="start">
@@ -78,7 +78,7 @@ export default function App() {
       <NavbarContent as="div" className="items-center" justify="end">
         <Input
           classNames={{
-            base: "hidden md:flex h-10  w-[577px]",
+            base: "hidden md:flex h-10 w-[577px] md:w-full",
             mainWrapper: "h-full",
             input: "text-small bg-primaryColor",
             inputWrapper:

@@ -6,12 +6,25 @@ import Page2Products from "../Page-2-components/Page2Products";
 import Page2Text from "../Page-2-components/Page2Text";
 import Page2Cards from "../Page-2-components/Page2Cards";
 import Page2Footer from "../Page-2-components/Page2Footer";
+import Link from "next/link";
+import Footer1 from "../components/Footer1";
 export default function Page() {
   return (
     <div>
-      <div className=" max-w-[1300px] grid grid-cols-2   mt-10 m-auto  gap-4     ">
-        <div>
-          <Blog />
+      <div className=" max-w-[1300px]   m-auto lg:flex  mt-10  gap-4     ">
+        <div className=" lg:flex">
+          <Blog  />
+          <div className=" w-full md:w-[517px] ml-2 ">
+        <Link  href="/Blog/1">
+                <Image
+                className=" bg-primaryColor  p-10 rounded-xl"
+                  src="/T-shirt.png"
+                  width={517}
+                  height={517}
+                  alt="pic"
+                ></Image>
+          </Link>
+      </div>
         </div>
         <div className=" mt-4">
           <h1 className=" text-5xl font-bold  "> One Life Graphic T-shirt</h1>
@@ -71,7 +84,7 @@ export default function Page() {
               <h1>1</h1>
               <h1>+</h1>
             </div>
-            <button className="  w-[300px] p-2 rounded-full mt-2 text-whiteColor  bg-secondaryColor">
+            <button className="w-full md:w-[300px] p-2 rounded-full mt-2 text-whiteColor  bg-secondaryColor">
               Add to Cart
             </button>
           </div>
@@ -82,6 +95,7 @@ export default function Page() {
       <Page2Text />
       <Page2Products />
       <Page2Footer/>
+      <Footer1/>
     </div>
   );
 }

@@ -21,10 +21,10 @@ const images = [
 export default function Page2Products() {
   return (
    <div>
-     <div className=" grid mx-20  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] gap-4">
+     <div className=" grid  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] gap-4">
       {images?.map((item) => {
         return (
-          <Card radius="lg" className="border-none    w-[295px] ">
+          <Card radius="lg" className="border-none  w-full  md:w-[295px] ">
             <div className="flex flex-col bg-primaryColor rounded-md ">
               <Image
                 className=" ml-10 "

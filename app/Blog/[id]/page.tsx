@@ -4,6 +4,7 @@ import { RiDeleteBin6Fill } from "react-icons/ri";
 
 import { Card, CardBody, } from "@nextui-org/react";
 import Footer3 from "@/app/Page3-components/Footer";
+import Footer1 from "@/app/components/Footer1";
 
 const blogsData = [
   {
@@ -30,10 +31,10 @@ export default function Id({ params }: { params: { id: string } }) {
         {showData?.map((item) => {
           return (
            <div className=" grid grid-cols-2 sm:grid-cols-1   lg:grid-cols-2 gap-4 ">
-             <div className=" flex flex-col gap-2 ml-1 "  >
+             <div className=" flex flex-col gap-2 m-2 "  >
               <Card
                 isBlurred
-                className="border-primaryColor bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+                className="border-primaryColor bg-background/60 dark:bg-default-100/50 w-full"
                 shadow="sm"
               >
                 <CardBody>
@@ -77,7 +78,7 @@ export default function Id({ params }: { params: { id: string } }) {
               </Card>
               <Card
                 isBlurred
-                className="border-primaryColor bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+                className="border-primaryColor bg-background/60 dark:bg-default-100/50 w-full"
                 shadow="sm"
               >
                 <CardBody>
@@ -121,7 +122,7 @@ export default function Id({ params }: { params: { id: string } }) {
               </Card>
               <Card
                 isBlurred
-                className="border-primaryColor bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+                className="border-primaryColor bg-background/60 dark:bg-default-100/50 w-full"
                 shadow="sm"
               >
                 <CardBody>
@@ -164,7 +165,7 @@ export default function Id({ params }: { params: { id: string } }) {
                 </CardBody>
               </Card>
             </div>
-            <div className=" bg[#000000] border rounded-2xl ml-1 border-primaryColor h-[458px]  lg:w-[505px] md:w-[608px]">
+            <div className=" bg[#000000] border rounded-2xl m-2  border-primaryColor h-[458px]  lg:w-[505px] md:w-[608px]">
                 <h1 className=" font-bold text-2xl p-5">Order Summary</h1>
              <div className=" flex flex-col gap-5">
              <div className=" flex justify-between mx-4">
@@ -185,19 +186,22 @@ export default function Id({ params }: { params: { id: string } }) {
                     <p className="text-textColor">Total</p>
                     <h1 className=" font-bold text-xl">467$</h1>
                 </div>
-                <div className=" flex mt-4 mx-4 gap-2">
+               <div className=" ml-5">
+               <div className=" flex mt-4   gap-2">
                     <button className=" bg-[#F0F0F0] w-[326px] p-4 rounded-full">Add Promo Code</button>
                     <button className=" bg-secondaryColor text-primaryColor w-[125px] p-4 rounded-full">Apply</button>
                 </div>
-                <div className=" flex mt-8 mx-4 gap-2">
+                <div className=" flex mt-8  gap-2">
                     <button className=" bg-secondaryColor text-primaryColor w-[470px] p-4 rounded-full">Go to Checkout</button>
                 </div>
+               </div>
             </div>
            </div>
           );
         })}
       </div>
       <Footer3/>
+      <Footer1/>
     </div>
   );
 }
