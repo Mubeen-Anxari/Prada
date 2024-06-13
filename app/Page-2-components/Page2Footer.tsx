@@ -3,7 +3,7 @@ import React from "react";
 export default function Page2Footer() {
   return (
      <div className="  ">
-       <div className=" max-w-[1000px] m-auto grid md:grid-cols-1   lg:grid-cols-2    py-4 bg-secondaryColor rounded-xl">
+       <div className=" max-w-[1200px]  m-auto mx-20 grid md:grid-cols-1   lg:grid-cols-2    py-4 bg-secondaryColor rounded-xl">
         <div>
         <h1 className=" mt-2 text-center font-bold  text-4xl text-whiteColor">
         STAY UPTO DATE ABOUT OUR LATEST OFFERSn 

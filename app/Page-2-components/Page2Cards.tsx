@@ -30,7 +30,7 @@ const card = [
 ];
 export default function Page2Cards() {
   return (
-    <div className=" grid md:grid-cols-1 mt-20 lg:grid-cols-2   max-w-[1200px] m-auto gap-4">
+    <div className=" grid mx-20 md:grid-cols-1 mt-20 lg:grid-cols-2   max-w-[1200px] m-auto gap-4">
       {card?.map((item) => {
         return (
           <div>

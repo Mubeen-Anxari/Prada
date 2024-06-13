@@ -21,10 +21,10 @@ const images = [
 export default function Page2Products() {
   return (
    <div>
-     <div className=" grid  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] gap-4">
+     <div className=" grid mx-20  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] gap-4">
       {images?.map((item) => {
         return (
-          <Card radius="lg" className="border-none  w-full  md:w-[295px] ">
+          <Card radius="lg" className="border-none  w-[295px]  md:w-full flex text-center">
             <div className="flex flex-col bg-primaryColor rounded-md ">
               <Image
                 className=" ml-10 "
@@ -37,7 +37,7 @@ export default function Page2Products() {
             <p className=" mt-2 text-xs  ml-4 font-bold ">
               T-SHIRT WITH TAPE DETAILS
             </p>
-            <div className=" flex ml-4 gap-2 mt-2">
+            <div className=" flex ml-20 gap-2 mt-2">
             <Image src="/stars.png" width={104} height={20} alt="pic"></Image>
             <p className=" text-sm font-normal w-[33px] h-[19px]">4.5/5</p>
             </div>{" "}

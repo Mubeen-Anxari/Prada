@@ -109,10 +109,10 @@ export default function Footer1() {
             <Image src="/logos/4.png" width={28} height={28} alt="pic"></Image>
           </div>
         </div>
-        <div className="flex-1 mt-2  grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="flex-1 mt-2  grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {titles?.map((item, index) => {
             return (
-              <div key={index}>
+              <div key={index} className=" ">
                 {item?.map((subitem, subIndex) => {
                   return (
                     <div key={subIndex} className="flex  gap-2">

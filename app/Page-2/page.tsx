@@ -11,10 +11,9 @@ import Footer1 from "../components/Footer1";
 export default function Page() {
   return (
     <div>
-      <div className=" max-w-[1300px]   m-auto lg:flex  mt-10  gap-4     ">
-        <div className=" lg:flex">
-          <Blog  />
-          <div className=" w-full md:w-[517px] ml-2 ">
+      <div className=" max-w-[1300px]  m-auto lg:flex  md:w-full   mt-10  gap-4     ">
+        <div className=" lg:flex gap-2">
+          <div className=" w-[517px] md:w-full ml-1  ">
         <Link  href="/Blog/1">
                 <Image
                 className=" bg-primaryColor  p-10 rounded-xl"
@@ -25,6 +24,7 @@ export default function Page() {
                 ></Image>
           </Link>
       </div>
+          <Blog  />
         </div>
         <div className=" mt-4">
           <h1 className=" text-5xl font-bold  "> One Life Graphic T-shirt</h1>

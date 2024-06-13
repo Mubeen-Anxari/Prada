@@ -24,9 +24,7 @@ export default function Home() {
       <Footer/>
        <Footer1/> 
        <div>
-        <Link href='/Blog'>
-        <h1>Blogs</h1>
-        </Link>
+       
        </div>
     </div>
   );
