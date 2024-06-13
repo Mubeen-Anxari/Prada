@@ -19,7 +19,7 @@ import Image from "next/image";
 // ]
 export default function Logos() {
   return (
-    <div className=" bg-secondaryColor max-w-[1700px] hidden md:flex   min-h-[100px] gap-4 justify-between py-4  m-auto">
+    <div className=" bg-secondaryColor max-w-[1700px] hidden md:flex   min-h-[60px] gap-4 justify-between py-2  m-auto">
       <div className=" flex flex-1 flex-wrap  mx-[100px] justify-between">
         <Image src="/logo1.png" width={166} height={33} alt="pic"></Image>
         <Image src="/logo2.png" width={91} height={38} alt="pic"></Image>

@@ -9,6 +9,7 @@ import TopSeller from "./components/TopSeller";
 import Cards from "./components/Card";
 import Footer from "./components/Footer";
 import Footer1 from "./components/Footer1";
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
@@ -22,6 +23,11 @@ export default function Home() {
       <Cards/> 
       <Footer/>
        <Footer1/> 
+       <div>
+        <Link href='/Blog'>
+        <h1>Blogs</h1>
+        </Link>
+       </div>
     </div>
   );
 }
