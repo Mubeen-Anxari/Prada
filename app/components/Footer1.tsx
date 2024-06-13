@@ -1,8 +1,5 @@
 import React from "react";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { IoLogoGithub } from "react-icons/io5";
+
 import Image from "next/image";
 
 export default function Footer1() {
@@ -129,7 +126,7 @@ export default function Footer1() {
       </div>
       <hr className=" max-w-[1200px] m-auto text-whiteColor mt-4 pt-4" />
       <div className=" max-w-[1200px] m-auto   ">
-        <div className="lg:flex justify-between sm:flex-col lg:flex-row">
+        <div className=" flex flex-col items-center lg:flex lg:justify-between ">
           <div className="">
             <h1 className=" mt-4 font-bold text-sm text-secondaryColor">
               Shop.co © 2000-2023, All Rights Reserved
