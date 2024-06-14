@@ -23,8 +23,8 @@ export default function Api() {
                   alt="Card background"
                   className="object-cover rounded-xl"
                   src={item?.image}
-                  width={200}
-                  height={500}
+                  width={150}
+                  height={600}
                 />
               </CardBody>
               <CardHeader className="=px-4 flex-col items-start">
