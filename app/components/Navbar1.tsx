@@ -56,7 +56,7 @@ const dispatch = useAppDispatch()
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-5">
           <NavbarItem className=" flex gap-1 ">
-            <Link color="foreground" href="/Page-2">
+            <Link color="foreground" href="/Detail">
               Shop
             </Link>
             <Image src="/Frame.png" width={10} height={10} alt="pic"></Image>
