@@ -10,6 +10,7 @@ import Cards from "./components/Card";
 import Footer from "./components/Footer";
 import Footer1 from "./components/Footer1";
 import Link from "next/link";
+import Api from "./Api-call/Page";
 export default function Home() {
   return (
     <div>
@@ -23,6 +24,7 @@ export default function Home() {
       <Cards/> 
       <Footer/>
        <Footer1/> 
+       <Api/>
        <div>
        
        </div>

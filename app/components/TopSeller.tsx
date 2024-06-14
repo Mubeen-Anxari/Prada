@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
+import { useAppDispatch, useAppSelector } from "./hooks/hook";
+import { addToCart } from "../redux/CartSlice";
 const images = [
   {
     image: "/sleeveless2.png",
@@ -19,6 +22,8 @@ const images = [
  
 ];
 export default function TopSeller() {
+ const cartUser= useAppSelector(state=>state.cart)
+const dispatch= useAppDispatch()
   return (
    <div>
     <h1 className=" font-bold text-center text-4xl mt-20">TOP SELLING </h1>
@@ -43,6 +48,8 @@ export default function TopSeller() {
             <p className=" text-sm font-normal w-[33px] h-[19px]">4.5/5</p>
             </div>{" "}
             <h1 className=" font-bold text-lg ml-4">$120</h1>
+            <button  onClick={()=>dispatch(addToCart(item))} className=" bg-secondaryColor  text-primaryColor p-2 rounded-full" >Add to cart</button>
+
           </Card>
         );
       })}

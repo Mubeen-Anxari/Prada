@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   Navbar,
@@ -21,8 +22,11 @@ import Image from "next/image";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useAppDispatch, useAppSelector } from "./hooks/hook";
 
 export default function App() {
+ const cartUser= useAppSelector(state=>state.cart)
+const dispatch = useAppDispatch()
   const menuItems = [
     "Profile",
     "Dashboard",
@@ -89,7 +93,12 @@ export default function App() {
           startContent={<IoIosSearch className=" text-textColor" />}
           type="search"
         />
-        <HiOutlineShoppingCart className=" w-[40px]  h-6" />
+        <Link href="/Cart">
+        <div>
+        <HiOutlineShoppingCart className=" w-[40px]  h-6" />{cartUser?.cart?.length}
+
+        </div>
+        </Link>
         <FaRegUserCircle className="w-8 h-6" />
       </NavbarContent>
 

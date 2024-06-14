@@ -3,7 +3,7 @@ import Image from "next/image";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
 import { Card, CardBody, } from "@nextui-org/react";
-import Footer3 from "@/app/Page3-components/Footer";
+import Footer3 from "@/app/NestedComponents2/Footer";
 import Footer1 from "@/app/components/Footer1";
 
 const blogsData = [

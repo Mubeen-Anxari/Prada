@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
+import { addToCart } from "../redux/CartSlice";
+import { useAppDispatch } from "../components/hooks/hook";
 const images = [
   {
     image: "/sleeveless2.png",
@@ -19,6 +22,7 @@ const images = [
  
 ];
 export default function Page2Products() {
+ const dispatch = useAppDispatch()
   return (
    <div>
      <div className=" grid mx-20  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] gap-4">
@@ -42,6 +46,8 @@ export default function Page2Products() {
             <p className=" text-sm font-normal w-[33px] h-[19px]">4.5/5</p>
             </div>{" "}
             <h1 className=" font-bold text-lg ml-4">$120</h1>
+            <button  onClick={()=>dispatch(addToCart(item))} className=" bg-secondaryColor  text-primaryColor p-2 rounded-full" >Add to cart</button>
+
           </Card>
         );
       })}

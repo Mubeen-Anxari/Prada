@@ -2,10 +2,10 @@ import React from "react";
 import Blog from "../Blog/page";
 import Image from "next/image";
 import ProductsRatingFaQs from "../components/Products-RatingFaQs";
-import Page2Products from "../Page-2-components/Page2Products";
-import Page2Text from "../Page-2-components/Page2Text";
-import Page2Cards from "../Page-2-components/Page2Cards";
-import Page2Footer from "../Page-2-components/Page2Footer";
+import Page2Products from "../NestedComponents1/Page2Products";
+import Page2Text from "../NestedComponents1/Page2Text";
+import Page2Cards from "../NestedComponents1/Page2Cards";
+import Page2Footer from "../NestedComponents1/Page2Footer";
 import Link from "next/link";
 import Footer1 from "../components/Footer1";
 export default function Page() {
