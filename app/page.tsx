@@ -9,7 +9,6 @@ import TopSeller from "./components/TopSeller";
 import Cards from "./components/Card";
 import Footer from "./components/Footer";
 import Footer1 from "./components/Footer1";
-import Link from "next/link";
 import Api from "./Api-call/Page";
 export default function Home() {
   return (
@@ -20,11 +19,12 @@ export default function Home() {
       <Logos/>
       <Text/>
       <Products/>
+      <div className=" font-bold text-3xl m-2 text-center">Fake-Store-Api</div>
+       <Api/>
       <TopSeller/>
       <Cards/> 
       <Footer/>
        <Footer1/> 
-       <Api/>
        <div>
        
        </div>
