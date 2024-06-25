@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
-import { useAppDispatch } from "./hooks/hook";
+import { useAppDispatch, useAppSelector } from "./hooks/hook";
 import { addToCart } from "../redux/CartSlice";
 const images = [
   {
@@ -45,11 +45,14 @@ const images = [
  
 ];
 export default function Products() {
+ const cartUser= useAppSelector(state=>state.cart)
  const dispatch= useAppDispatch()
   return (
    <div>
      <div className=" grid  md:grid-cols-2 mt-20 lg:grid-cols-3  xl:grid-cols-4 max-w-[1600px] m-auto gap-4">
       {images?.map((item) => {
+
+
         return (
           <Card radius="lg" className="border-none    w-full ">
             <div className="flex flex-col justify-center bg-primaryColor rounded-md ">

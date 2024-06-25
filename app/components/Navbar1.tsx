@@ -93,9 +93,9 @@ const dispatch = useAppDispatch()
           startContent={<IoIosSearch className=" text-textColor" />}
           type="search"
         />
-        <Link href="/Cart">
-        <div>
-        <HiOutlineShoppingCart className=" w-[40px]  h-6" />{cartUser?.cart?.length}
+        <Link href="/cart">
+        <div className=" flex flex-row-reverse">
+        <HiOutlineShoppingCart className=" w-[40px]  h-6" />{cartUser?.cart?.length}:
 
         </div>
         </Link>
