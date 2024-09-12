@@ -3,6 +3,8 @@ import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import Projects from "../components/projects/Projects";
 import Contact from "../components/Contact";
+import Cards from "../components/projects/cards";
+import Footer1 from "../components/Footer1";
 
 const images = [
   {
@@ -31,7 +33,9 @@ export default function Project() {
         <h1 className="justify-center flex text-redColor text-xl font-serif font-bold ">
           MY WORK
         </h1>
-        <h1 className="pt-4 text-whiteColor justify-center flex font-serif text-7xl">Projects</h1>
+        <h1 className="pt-4 text-whiteColor justify-center flex font-serif text-7xl">
+          Projects
+        </h1>
         <p className="w-full text-center   text-whiteColor pt-8">
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -40,14 +44,16 @@ export default function Project() {
           and manage projects effectively.
         </p>
       </div>
-        <div className="max-w-[1100px] m-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="max-w-[1100px] m-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <Projects />
-        </div>
-       
+      </div>
       <div className=" pt-8">
         <hr className=" text-redColor" />
       </div>{" "}
-      <Contact/>
+      <Cards />
+      <hr className=" mt-8 text-redColor" />
+      <Contact />
+      
     </div>
   );
 }

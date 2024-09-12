@@ -13,7 +13,8 @@ export default function Contact() {
     e.preventDefault();
   };
   return (
-    <div className="max-w-[1100px] m-auto grid grid-cols-1 md:grid-cols-2 bg-blacklColor  mt-20">
+  <div>
+      <div className="max-w-[1100px] m-auto grid grid-cols-1 md:grid-cols-2 bg-blacklColor  mt-20">
       <div className="mt-10">
         <h1 className="text-3xl font-bold flex justify-center  text-redColor mb-6">Contact Us</h1>
         <p className=" mx-2 flex justify-center text-whiteColor">
@@ -113,5 +114,7 @@ export default function Contact() {
         </form>
       </div>
     </div>
+      <hr className=" text-redColor mt-6 " />
+  </div>
   );
 }
