@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../components/hooks/hook";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-import { addQuantity, addToCart, getProducts } from "../redux/CartSlice";
+import {  addToCart, getProducts } from "../redux/CartSlice";
 
 export default function Api() {
   const cartUser = useAppSelector((state) => state.cart);

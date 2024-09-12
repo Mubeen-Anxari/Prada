@@ -21,6 +21,11 @@ const config: Config = {
       secondaryColor: "#000000",
       textColor: "rgb(0,0,0,0.6)",
       whiteColor: "#ffffff",
+      blacklColor:"#000000",
+      redColor:"#ae0c00",
+      gray:"#3b3c36",
+      textinsta:"#F97F2B",
+      textfb:"#0165E1"
     },
   },
   plugins: [nextui()],

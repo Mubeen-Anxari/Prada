@@ -1,31 +1,24 @@
-"use client"
+"use client";
 import React from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Input,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  Input,
 } from "@nextui-org/react";
-import Logo from "./Logo";
 import { IoIosSearch } from "react-icons/io";
 import Image from "next/image";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useAppDispatch, useAppSelector } from "./hooks/hook";
+import Link from "next/link";
+import Logo from "../Logos/page";
 
-export default function App() {
- const cartUser= useAppSelector(state=>state.cart)
+export default function PortfolioNavbar() {
   const menuItems = [
     "Profile",
     "Dashboard",
@@ -39,11 +32,12 @@ export default function App() {
     "Log Out",
   ];
   return (
-    <Navbar maxWidth="full" isBordered>
+  <div className=" max-w-[1200px]  m-auto">
+      <Navbar className="bg-blacklColor" maxWidth="full" isBordered>
       <NavbarContent className="md:hidden">
-        <NavbarMenuToggle icon={<RxHamburgerMenu color="black" size={25} />} />
+        <NavbarMenuToggle icon={<RxHamburgerMenu color="white" size={25} />} />
       </NavbarContent>
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="md:hidden" justify="start">
         <NavbarBrand>
           <Logo />
         </NavbarBrand>
@@ -53,53 +47,43 @@ export default function App() {
         <NavbarBrand className="mr-4">
           <Logo />
         </NavbarBrand>
-        <NavbarContent className="hidden sm:flex gap-5">
+       <div>
+       <NavbarContent className="hidden sm:flex gap-5">
           <NavbarItem className=" flex gap-1 ">
-            <Link color="foreground" href="/Detail">
-              Shop
+            <Link
+              className=" text-redColor font-bold"
+              color="foreground"
+              href="/Detail"
+            >
+              Home
             </Link>
-            <Image src="/Frame.png" width={10} height={10} alt="pic"></Image>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page" color="secondary">
-              On Sale
+            <Link className=" text-whiteColor font-bold" href="#" aria-current="page" color="secondary">
+              About
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              New Arrival
+            <Link className=" text-whiteColor font-bold" color="foreground" href="#">
+              Work
             </Link>
           </NavbarItem>
+        
+        
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Brands
+            <Link className="  text-whiteColor font-bold" color="foreground" href="#">
+              Contact
             </Link>
           </NavbarItem>
         </NavbarContent>
+       </div>
       </NavbarContent>
 
+      <div>
       <NavbarContent as="div" className="items-center" justify="end">
-        <Input
-          classNames={{
-            base: "hidden md:flex h-10 w-[577px] md:w-full",
-            mainWrapper: "h-full",
-            input: "text-small bg-primaryColor",
-            inputWrapper:
-              "h-full  font-normal bg-primaryColor text-default-500 ",
-          }}
-          placeholder="Type to search..."
-          size="sm"
-          startContent={<IoIosSearch className=" text-textColor" />}
-          type="search"
-        />
-        <Link href="/cart">
-        <div className=" flex flex-row-reverse">
-        <HiOutlineShoppingCart className=" w-[40px]  h-6" />{cartUser?.cart?.length}:
-
-        </div>
-        </Link>
-        <FaRegUserCircle className="w-8 h-6" />
+      
       </NavbarContent>
+      </div>
 
       <NavbarMenu className=" bg-primaryColor pt-10">
         {menuItems.map((item, index) => (
@@ -114,7 +98,6 @@ export default function App() {
                   : "foreground"
               }
               href="#"
-              size="lg"
             >
               {item}
             </Link>
@@ -122,5 +105,6 @@ export default function App() {
         ))}
       </NavbarMenu>
     </Navbar>
+  </div>
   );
 }
