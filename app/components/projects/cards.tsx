@@ -30,11 +30,11 @@ const card = [
 ];
 export default function Cards() {
   return (
-    <div>
-      <div className="  grid mx-20 md:grid-cols-1 mt-20 lg:grid-cols-2   max-w-[1200px] m-auto gap-4">
-        {card?.map((item) => {
+    <div className=" flex justify-center">
+      <div className="  grid md:grid-cols-1 mt-20 lg:grid-cols-2   max-w-[1100px] m-auto gap-4">
+        {card?.map((item,index) => {
           return (
-            <div className=" ">
+            <div key={index} className=" ">
               <Card className="h-[200px] bg-redColor p-5">
                 <CardHeader className="flex gap-3">
                   <h1 className=" text-2xl font-bold ">{item?.name}</h1>
@@ -45,7 +45,7 @@ export default function Cards() {
                   </p>
                 </div>
                 <p className="text-md text-whiteColor">
-                  {item?.description.slice(0, 200)}{" "}
+                  {item?.description.slice(0, 200)}
                 </p>
               </Card>
             </div>
