@@ -50,7 +50,7 @@ export default function Contact() {
             </Link>
           </div>
       </div>
-      <div className="bg-gray mt-10 md:w-[450px]   p-8 rounded-lg shadow-lg w-full ">
+      <div className="bg-gray mt-10 lg:w-[450px]   p-8 rounded-lg shadow-lg w-full ">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label

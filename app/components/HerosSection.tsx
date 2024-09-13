@@ -33,7 +33,7 @@ export default function HeroSection() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-10 justify-center">
+        <div className="flex gap-10  justify-center">
           <div className=" mt-10 flex justify-center">
             <Image
               className="md:ml-44"
@@ -43,7 +43,8 @@ export default function HeroSection() {
               alt="pic"
               priority
             />
-          <div className="flex pt-32 gap-4 flex-col">
+          </div>
+          <div className="flex  mx-2 pt-32 gap-4 flex-col">
             <Link href="https://www.instagram.com/mubeenansari1220/">
               <FaSquareInstagram className="text-textinsta cursor-pointer" />
             </Link>
@@ -56,7 +57,6 @@ export default function HeroSection() {
             <Link href="https://www.tiktok.com/search?q=mubeen%20ansari%201220&t=1726123537412">
               <AiFillTikTok className="text-whiteColor cursor-pointer" />
             </Link>
-          </div>
           </div>
         </div>
       </div>
